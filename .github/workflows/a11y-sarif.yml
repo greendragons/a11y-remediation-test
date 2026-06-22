@@ -24,7 +24,7 @@ jobs:
             "runs": [{
               "tool": {
                 "driver": {
-                  "name": "BrowserStack Accessibility",
+                  "name": "Accessibility Scanner",
                   "semanticVersion": "1.0.0",
                   "rules": [
                     {
@@ -69,4 +69,4 @@ jobs:
         uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: results.sarif
-          category: browserstack-a11y
+          category: a11y-scan
